@@ -1,0 +1,17 @@
+# am-secrets; executable remains secrets. Legacy session_timeout is ignored.
+version: 2
+provider: bitwarden
+bitwarden:
+  email: your@example.com
+  server: https://vault.bitwarden.com
+whitelist:
+  - python3
+  - node
+  - npm
+  - go
+  - cargo
+  - ruby
+  - bun
+daemon:
+  socket: ~/.secrets/daemon.sock
+  auto_start: true

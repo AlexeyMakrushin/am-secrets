@@ -1,0 +1,65 @@
+# Secrets (never commit)
+keys
+keys.json
+vault.enc
+vault.json
+vault.decrypted.json
+config.yaml
+trusted_hashes
+
+# Runtime
+daemon.sock
+logs/
+
+# Binaries (built)
+secrets
+secrets-daemon-bin
+
+# Build artifacts
+secrets-daemon/.build/
+secrets-cli/target/
+
+# Test
+test_env/
+
+# Python (v1)
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Backup
+backup-*/
+backup-v1-legacy/
+*.bak
+
+# Other tools
+.obsidian/
+.claude-flow/
+.swarm/
+
+# Other
+*.log
+*.tmp
+
+# Backups
+*.backup-*
+
+# Local safety snapshots and execution traces
+backup/
+var/
+
+# Local exports and compiler caches
+.env
+.env.*
+!.env.example
+secrets-manifest*.json
+.swift-cache/
+.module-cache/
+.scratch/publication/instructions/
